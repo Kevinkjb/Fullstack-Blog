@@ -22,16 +22,16 @@ export const LoginPage = () =>{
             {error && <p className="error">{error}</p>}
             <div className="login">
                 <div className="email">
-                <label>Email:</label>
                 <input 
+                    placeholder="Email"
                     type="email"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
                 </div>
                 <div className="password">
-                    <label>Password:</label>
                     <input 
+                        placeholder="Password"
                         type="password"
                         value={password}
                         onChange={e => setPassword(e.target.value)}

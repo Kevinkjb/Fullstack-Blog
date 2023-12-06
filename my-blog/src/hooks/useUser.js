@@ -9,6 +9,7 @@ export const useUser = () => {
         const unsubscribe = onAuthStateChanged(getAuth(), user =>{
             setUser(user);
             setIsLoading(false);
+
         });
         return unsubscribe;
     }, []);
